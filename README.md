@@ -4,6 +4,8 @@ Clipboard-landing-page-front-end-mentor-junior-3
 
 ## Demo:
 
+https://mohamedcleancode.github.io/Clipboard-landing-page-front-end-mentor/
+
 ## Features:
 
 Put your layout skills to the test with this HTML & CSS landing page challenge. This challenge includes a design for hover states.
