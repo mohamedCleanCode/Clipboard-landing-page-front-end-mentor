@@ -114,6 +114,7 @@ header .container .actions .btn-mac {
 }
 .heading {
   text-align: center;
+  margin-bottom: 30px;
 }
 .heading h2 {
   color: var(--dark-gray);
@@ -163,3 +164,17 @@ header .container .actions .btn-mac {
   color: var(--gray-blue);
 }
 /* End snippets */
+/* Start gallery */
+.gallery {
+  padding: 50px 0;
+}
+.gallery .image {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+.gallery .image img {
+  width: 100%;
+  max-width: 100%;
+}
+/* End gallery */
