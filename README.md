@@ -11,4 +11,4 @@ Put your layout skills to the test with this HTML & CSS landing page challenge. 
 ### View the optimal layout for the site depending on their device's screen size
 ### See hover states for all interactive elements on the page
 
-![Getting Started](./design/desktop-preview)
+![Getting Started](./design/desktop-preview.jpg)
