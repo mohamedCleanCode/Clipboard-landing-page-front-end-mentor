@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  --cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-gray: hsl(210, 10%, 33%);
+  --gray-blue: hsl(201, 11%, 66%);
+  --white: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Start global rules */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*small screen*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/*medium screen*/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*large screen*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End global rules */
+/* Start home */
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/bg-header-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+}
+.home .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home .container .top {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .container .top img {
+  width: 100px;
+}
+.home .container .top h1 {
+  font-size: 45px;
+  color: var(--dark-gray);
+}
+.home .container .top p {
+  color: var(--gray-blue);
+}
+.home .container .top .actions {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .container .top .actions .btn {
+  width: 48%;
+  border: none;
+  padding: 20px;
+  border-radius: 25px;
+  color: var(--white);
+  font-size: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.home .container .top .actions .btn:hover {
+  transform: scale(1.1);
+}
+.home .container .top .actions .btn-ios {
+  background-color: var(--cyan);
+  box-shadow: 5px 5px 5px var(--cyan);
+}
+.home .container .top .actions .btn-mac {
+  background-color: var(--light-blue);
+  box-shadow: 5px 5px 5px var(--light-blue);
+}
+.home .container .bottom {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.home .container .bottom h2 {
+  color: var(--dark-gray);
+  font-size: 30px;
+}
+.home .container .bottom p {
+  color: var(--gray-blue);
+}
+/* End home */
