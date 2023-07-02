@@ -278,40 +278,40 @@ header .container .actions .btn-mac {
   margin-bottom: 15px;
 }
 /* End brands */
-/* Start footer */
-footer {
+/* Start info */
+.info {
   padding: 50px 0;
 }
-footer .container {
+.info .container {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-footer .container img {
+.info .container img {
   width: 100px;
 }
-footer .container h1 {
+.info .container h1 {
   font-size: 45px;
   color: var(--dark-gray);
 }
-footer .container p {
+.info .container p {
   color: var(--gray-blue);
   margin: 20px 0;
 }
-footer .container .actions {
+.info .container .actions {
   width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 767px) {
-  footer .container .actions {
+  .info .container .actions {
     flex-direction: column;
   }
 }
-footer .container .actions .btn {
+.info .container .actions .btn {
   width: 48%;
   border: none;
   padding: 20px;
@@ -323,19 +323,68 @@ footer .container .actions .btn {
   margin-bottom: 15px;
 }
 @media (max-width: 767px) {
-  footer .container .actions .btn {
+  .info .container .actions .btn {
     width: 100%;
   }
 }
-footer .container .actions .btn:hover {
+.info .container .actions .btn:hover {
   transform: scale(1.1);
 }
-footer .container .actions .btn-ios {
+.info .container .actions .btn-ios {
   background-color: var(--cyan);
   box-shadow: 5px 5px 5px var(--cyan);
 }
-footer .container .actions .btn-mac {
+.info .container .actions .btn-mac {
   background-color: var(--light-blue);
   box-shadow: 5px 5px 5px var(--light-blue);
+}
+/* End info */
+/* Start footer */
+footer {
+  background-color: #eee;
+  padding: 50px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  footer .container {
+    justify-content: center;
+  }
+}
+footer .container img {
+  width: 60px;
+  height: 60px;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+footer .container .links {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+footer .container .links li {
+  width: fit-content;
+}
+footer .container .links li a {
+  color: var(--dark-gray);
+  margin: 15px 0;
+}
+footer .container .social {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .container .social li a img {
+  width: 30px;
+  height: 30px;
+  max-width: 100%;
 }
 /* End footer */
